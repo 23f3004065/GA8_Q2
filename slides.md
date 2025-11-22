@@ -1,51 +1,54 @@
 ---
 marp: true
-theme: custom
+theme: default
 paginate: true
 paginate-placement: bottom-right
 headingDivider: 2
-backgroundImage: "/bg.jpg"
-background-image: "/bg.jpg"
 ---
 
-<!-- Minimal custom theme -->
+<!-- tiny theme + contact -->
 <style>
-section::after {
-  content: "Contact: 23f3004065@ds.study.iitm.ac.in";
-  position: absolute;
-  bottom: 12px;
-  left: 20px;
-  font-size: 14px;
-  opacity: 0.95;
-}
+section::after { content: "Contact: 23f3004065@ds.study.iitm.ac.in"; position: absolute; bottom:12px; left:20px; font-size:13px; opacity:0.85; }
 </style>
 
-# Product Documentation Presentation
+# Product Documentation
 **Author:** 23f3004065@ds.study.iitm.ac.in
 
 ---
 
-# Background Slide (repo-hosted)
+---
 backgroundImage: "/bg.jpg"
 background-image: "/bg.jpg"
 backgroundSize: cover
 backgroundColor: rgba(0,0,0,0.35)
+---
 
-# Architecture Diagram
-This slide points to /bg.jpg as the background image.
+# System Architecture
+This slide uses the repo-hosted background image `/bg.jpg`.
+
+---
+
+---
+backgroundImage: "https://source.unsplash.com/1600x900/?technology"
+background-image: "https://source.unsplash.com/1600x900/?technology"
+backgroundSize: cover
+---
+
+# External Background Example
+This slide uses an external background image.
 
 ---
 
 ## Math
 \[
-T(n)=O(n \log n)
+T(n) = O(n \log n)
 \]
 
 ---
 
-## Code Example
+## Code example
 ```python
-print("Hello, Marp!")
+print("Hello Marp")
 ```
 
 ---
