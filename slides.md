@@ -67,7 +67,13 @@ backgroundImage: "https://source.unsplash.com/1600x900/?technology,computer"
 backgroundSize: cover
 backgroundPosition: center
 ---
+---
+backgroundImage: "/mnt/data/pipeline_diagram.png"
+backgroundSize: cover
+backgroundPosition: center
+---
 
+# System Architecture (With Background Image)
 # System Architecture (with Background)
 
 This slide **contains a background image**, fulfilling the requirement.
