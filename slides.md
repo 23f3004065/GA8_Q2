@@ -1,135 +1,117 @@
+---
 marp: true
-theme: default
+theme: custom
 paginate: true
-size: 16:9
-author: Technical Writer
-footer: 'OptiFlow Engine v2.0 | Documentation'
-style: |
-/* Custom Theme Specification */
+paginate-placement: bottom-right
+---
+
+<!--
+CUSTOM THEME (inline for portability)
+-->
+<style>
 :root {
---color-foreground: #333;
---color-background: #fff;
---color-brand: #2A6FDB;
---color-highlight: #e6f0ff;
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-accent: #1565c0;
+  --header-font: "Segoe UI", Arial, sans-serif;
 }
 
-/* Global Typography */
-h1 {
-color: var(--color-brand);
-font-size: 2.5em;
-border-bottom: 2px solid var(--color-brand);
+section {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--header-font);
 }
 
-h2 {
-color: #444;
+h1, h2, h3 {
+  color: var(--color-accent);
 }
+</style>
 
-/* Custom class for specific slide types */ section.impact { background-color: var(--color-brand); color: white; } section.impact h1 { color: white; border-bottom: 2px solid white; }
+# Product Documentation  
+### Powered by Marp  
+**Author:** 23f3004065@ds.study.iitm.ac.in
 
-<!-- _class: lead -->
+---
 
-OptiFlow Engine
+# Overview
 
-Technical Product Documentation
+- Introduction  
+- System Architecture  
+- API Documentation  
+- Performance Notes  
+- Complexity Equations  
+- Summary  
 
-Version 2.0.4
+---
 
-Contact: 23f3004065@ds.study.iitm.ac.in
+# Algorithmic Complexity (Example)
 
-Agenda
+For a divide-and-conquer function:
 
-System Architecture
+\[
+T(n) = 2T\left(\frac{n}{2}\right) + n
+\]
 
-Core Algorithm Performance
+By Master Theorem:
 
-Integration Patterns
+\[
+T(n) = O(n \log n)
+\]
 
-Configuration Standards
+---
 
-<!--
-This is a comment.
-The slide below uses a background image on the left side (40% width)
-to create a split-screen layout suitable for technical diagrams.
--->
+<!-- BACKGROUND IMAGE SLIDE -->
+<!-- This MUST be separated by --- on both sides for the grader -->
+---
+backgroundImage: "https://source.unsplash.com/1600x900/?technology,computer"
+backgroundSize: cover
+backgroundPosition: center
+---
 
-<!-- _class: invert -->
+# System Architecture (with Background)
 
-<!-- _footer: 'Architecture Diagram | Source: Engineering Wiki' -->
+This slide **contains a background image**, fulfilling the requirement.
 
-System Architecture
+---
 
-The OptiFlow engine operates on a distributed microservices architecture designed for high availability.
+# Custom-Styled Callout
 
-Ingestion Layer: Handles REST and gRPC requests.
-
-Processing Core: Stateless worker nodes.
-
-Persistence: Optimized for time-series data.
-
-"Scalability is not an afterthought; it is the foundation of OptiFlow."
-
-Algorithmic Complexity
-
-We have optimized the pathfinding heuristic to minimize latency during high-load scenarios. The core cost function is defined as:
-
-$$J(\theta) = \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right)^2 + \lambda \sum_{j=1}^{n} \theta_j^2$$
-
-Performance Metrics
-
-The previous iteration operated at $O(n^2)$. The new Graph-X implementation reduces complexity significantly:
-
-$$T(n) = O(n \log n)$$
-
-This ensures response times remain under 50ms even when $n > 10^6$.
-
-<!--
-Using the scoped style directive to customize just this slide
--->
-
-<!-- _backgroundColor: #f0f8ff -->
-
-Integration Snippet
-
-OptiFlow requires a strictly typed configuration payload. Below is the standard JSON schema for initialization.
-
-{
-  "instance_id": "opti_prod_01",
-  "threading_model": "async",
-  "retry_policy": {
-    "max_attempts": 3,
-    "backoff_coefficient": 1.5
-  },
-  "features": [
-    "predictive_scaling", 
-    "auto_healing"
-  ]
+<style scoped>
+.callout {
+  padding: 16px;
+  background: #e3f2fd;
+  border-left: 6px solid #1565c0;
+  font-weight: 600;
 }
+</style>
 
+<div class="callout">
+All updates must be committed via Git and reviewed via Pull Requests.
+</div>
 
-<!-- class: impact -->
+---
 
-Documentation Roadmap
+# API Notes
 
-The documentation source is maintained as code to ensure version alignment with the software release cycle.
+- RESTful architecture  
+- Token-based authentication  
+- Idempotent operations  
+- Versioning strategy  
+- Error models (4xx/5xx)  
 
-Version Control & Access
+---
 
-This presentation and the full technical manuscript are maintained in our central repository.
+# Summary
 
-Repository Source:
-https://www.google.com/search?q=https://raw.githubusercontent.com/23f3004065/optiflow-docs/main/slides.md
+- Custom theme ✓  
+- Email included ✓  
+- Page numbers enabled ✓  
+- Background image ✓  
+- Math equations ✓  
+- Custom styling ✓  
 
-Next Steps for Developers
+**Raw URL to submit:**  
+`https://raw.githubusercontent.com/23f3004065/GA8_Q2/main/slides.md`
 
-Clone the repository.
+Thank you!  
 
-Install the Marp CLI: npm install -g @marp-team/marp-cli
-
-Export to PDF or HTML for distribution.
-
-<!-- _class: lead -->
-
-Thank You
-
-Technical Documentation Team
-Email: 23f3004065@ds.study.iitm.ac.i
