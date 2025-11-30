@@ -79,7 +79,7 @@ blockquote {
 
 ---
 
-<!-- _backgroundColor: #f8f9fa -->
+<!-- backgroundColor: #f8f9fa -->
 
 ## Table of Contents
 
@@ -92,7 +92,7 @@ blockquote {
 
 ---
 
-<!-- _color: white -->
+<!-- color: white -->
 
 ![bg](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)
 
@@ -104,8 +104,8 @@ Contact: 23f3004065@ds.study.iitm.ac.in
 
 ---
 
-<!-- _header: "" -->
-<!-- _footer: "23f3004065@ds.study.iitm.ac.in | Architecture Overview" -->
+<!-- header: "" -->
+<!-- footer: "23f3004065@ds.study.iitm.ac.in | Architecture Overview" -->
 
 ## System Architecture
 
@@ -120,7 +120,7 @@ Our platform follows a microservices architecture with the following components:
 
 ---
 
-<!-- _class: invert -->
+<!-- class: invert -->
 
 ## API Endpoints Overview
 
