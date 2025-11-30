@@ -67,6 +67,9 @@ blockquote {
 
 ---
 
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
 # Product API Documentation
 ## Technical Overview & Implementation Guide
 
@@ -75,6 +78,8 @@ blockquote {
 **Version:** 2.0.0
 
 ---
+
+<!-- _backgroundColor: #f8f9fa -->
 
 ## Table of Contents
 
@@ -87,14 +92,9 @@ blockquote {
 
 ---
 
-![bg](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)
+<!-- _color: white -->
 
-<style scoped>
-h1, p {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-</style>
+![bg](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80)
 
 # Introduction
 
@@ -103,6 +103,9 @@ Building scalable and maintainable software systems
 Contact: 23f3004065@ds.study.iitm.ac.in
 
 ---
+
+<!-- _header: "" -->
+<!-- _footer: "23f3004065@ds.study.iitm.ac.in | Architecture Overview" -->
 
 ## System Architecture
 
@@ -116,6 +119,8 @@ Our platform follows a microservices architecture with the following components:
 > All services communicate via RESTful APIs and message queues
 
 ---
+
+<!-- _class: invert -->
 
 ## API Endpoints Overview
 
@@ -136,6 +141,9 @@ Our platform follows a microservices architecture with the following components:
 </div>
 
 ---
+
+<!-- _backgroundColor: #ecf0f1 -->
+<!-- _color: #2c3e50 -->
 
 ## Performance Characteristics
 
@@ -165,6 +173,8 @@ where $k$ is the cache size (typically $k \ll n$)
 
 ---
 
+<!-- _paginate: skip -->
+
 ## Authentication Flow
 
 ```python
@@ -187,6 +197,8 @@ def generate_token(user_id: str, secret_key: str) -> str:
 
 ---
 
+<!-- _color: #2c3e50 -->
+
 ![bg opacity:.3](https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=1920&q=80)
 
 # Security Best Practices
@@ -200,6 +212,8 @@ def generate_token(user_id: str, secret_key: str) -> str:
 **Contact:** 23f3004065@ds.study.iitm.ac.in
 
 ---
+
+<!-- _header: "API Examples" -->
 
 ## Request Example
 
@@ -222,6 +236,8 @@ curl -X POST https://api.example.com/v1/resources \
 
 ---
 
+<!-- _backgroundColor: white -->
+
 ## Error Handling
 
 All API errors follow a consistent format:
@@ -243,6 +259,8 @@ All API errors follow a consistent format:
 
 ---
 
+<!-- _footer: "" -->
+
 ## Rate Limiting
 
 Our API implements token bucket rate limiting:
@@ -260,6 +278,8 @@ X-RateLimit-Reset: 1638360000
 ```
 
 ---
+
+<!-- _class: lead -->
 
 ## Webhook Configuration
 
@@ -297,6 +317,9 @@ const signature = crypto
 **Note:** Complexities assume balanced tree structures
 
 ---
+
+<!-- _backgroundColor: #3498db -->
+<!-- _color: white -->
 
 ## Best Practices
 
@@ -336,14 +359,12 @@ marp slides.md -o output.html
 
 ---
 
-![bg](https://images.unsplash.com/photo-1557853197-aefb550b6fdc?w=1920&q=80)
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
 
-<style scoped>
-h1, h2, p {
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
-}
-</style>
+![bg](https://images.unsplash.com/photo-1557853197-aefb550b6fdc?w=1920&q=80)
 
 # Thank You
 
